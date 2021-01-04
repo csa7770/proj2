@@ -1,0 +1,60 @@
+.inner{width:1280px; margin:0 auto;}
+
+#wrap{}
+#header{}
+#section{}
+#footer{}
+
+/*********************header****************************/
+#header .logo{position:absolute; top:76px; left:861px;}
+
+
+/*********************section****************************/
+/*sec1*/
+#sec1{}
+#sec1 .main{position:absolute; top:0; left:0;}
+
+
+/*sec2*/
+#sec2{}
+#sec2 .tit_img{padding-top:120px; margin-left:107px;}
+#sec2 .s_tit{text-align: center;}
+#sec2 .more{display:inline-block; margin-left:532px;
+            border:8px solid #FF9595; border-radius:50px;
+            padding:17px 20px;
+            margin-top:80px; margin-bottom:100px;
+            color:#783636;}
+#sec2 .more img{margin-left:10px;}
+
+#sec2 .menu .menu_icon{position:absolute; top:1600px; left:300px;}
+#sec2 .menu .menu_icon li{float:left; margin-left:253px;}
+#sec2 .menu .menu_icon li:first-child{margin-left:0;}
+#sec2 .menu .menu_img{}
+#sec2 .menu .menu_img > li{float:left;
+                      width:calc((100% - 120px) / 4);
+                      margin-right:40px;}
+#sec2 .menu .menu_img > li:last-child{margin-right:0px;}
+
+/*sec3*/
+
+
+
+/*sec4*/
+#sec4 .cont .best >li{float:left;}
+#sec4 .cont .best >li > p{text-align: center;}
+
+
+
+/*sec5*/
+#sec5 .sns_img > li{float:left;}
+
+
+/*********************footer****************************/
+
+#footer{width:100%; height:207px; background-color: #FF9595;
+        text-align: center;}
+#footer ul {margin-left:166px; padding-top:40px; padding-bottom:30px;}
+#footer ul li{float:left;padding-right:15px; padding-left:15px;}
+#footer span{line-height:10px; margin-right:15px;}
+#footer span:nth-child(2), #footer span:nth-child(5){margin-right:none;}
+#footer .copy{font-weight:bold; margin-top:20px;}

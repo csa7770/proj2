@@ -122,13 +122,23 @@
 /***************/
 
 #sec3{clear:both;}
-#sec3 .slick-arrow{}
-#sec3 .slick-prev{background: url(../images/left_arrow.png);}
-#sec3 .slick-next{}
-#sec3 .slick-dots{}
-#sec1 .slick-dots li{}
-/* 버튼디자인 #sec1 .slick-dots li button{text-indent: -99999999px;
+#sec3 .slick-arrow{cursor: pointer; position:absolute; top:40%; z-index:9999;}
+#sec3 .slick-prev{width:110px; height:213px;
+                  background: url(../images/left_arrow.png);
+                  text-indent: -99999999px;
+                  left:50px;}
+#sec3 .slick-next{width:110px; height:213px;
+                  background: url(../images/right_arrow.png);
+                  text-indent: -99999999px;
+                  right:50px;}
+#sec3 .slick-dots{position: absolute; top:94%; left:48%; cursor:pointer;}
+#sec3 .slick-dots li{float:left;}
+#sec3 .slick-dots li button{text-indent: -99999999px;
                             background-color: #fff;
-                            padding-left:20px;
-                            margin-right:100px;}
-#sec1 .slick-dots li.slick-active button{background-color: rgba(36,53,96,0.8);}*/
+                            border-radius: 50%;
+                            padding-left:15px;
+                            margin-right:20px;
+                            transition:0.5s;}
+#sec3 .slick-dots li.slick-active button{background-color:#E7477D;
+                                         border-radius: 70px;
+                                         padding-left:15px; padding-right:15px;}

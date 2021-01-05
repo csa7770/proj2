@@ -30,15 +30,56 @@ button{outline:0; border:none;}
 #wrap{width:100%;overflow:hidden;}
 .inner{width:1280px; margin:0 auto;}
 
-.bg1{background:url(../images/back1.png) no-repeat;height:1080px;}
-.bg2{background:url(../images/back2.png) no-repeat;height:1080px;}
-.bg3{background:url(../images/back3.png) no-repeat;height:1080px;}
-.bg4{background:url(../images/back4.png) no-repeat;height:1080px;}
-.bg5{background:url(../images/back5.png) no-repeat;height:305px;}
+.bg1{background:url(../images/back01.png) no-repeat center;height:1080px; width:100%;}
+.bg2{background:url(../images/back2.png) no-repeat center;height:1080px; width:100%;}
+.bg3{background:url(../images/back3.png) no-repeat center;height:1080px; width:100%;}
+.bg4{background:url(../images/back4.png) no-repeat center;height:1080px; width:100%;}
+.bg5{background:url(../images/back5.png) no-repeat center;height:305px; width:100%;}
 
 
 /****네비영역****/
 
-#header .nav{position: fixed; top:55px; left:30px;}
-#header .nav li{float:left; padding-right:30px;}
-#header .nav .bar1{}
+#nav{background-color: rgba(255,255,255,0.8);
+     width:100%; height:150px; transition:0.5s;
+     position:fixed; z-index:99999999;}
+
+
+#header .list{position: fixed; top:55px; left:30px; z-index:99999999;}
+#header .list li{float:left; padding-right:30px;}
+#header .list .burger_button{margin-right:100px; margin-left:35px;
+                            padding-top:6px; cursor: pointer;}
+#header .list .bar1{width:30px; height:2px; background-color: #222;}
+#header .list .bar2{width:20px; height:2px; background-color: #222;
+                   margin-top:4px;}
+
+#nav_pop{position:fixed;
+        width:100%; min-width:1280px; height:100%;
+        overflow:auto;
+        background-color: thistle;
+        z-index:999999999px;
+        /*display:none;*/}
+#nav_pop .navpop_inner{width:1280px; margin:0 auto;}
+#nav_pop .depth1 > li{width:50%; float:left;}
+
+
+/*********************footer****************************/
+
+#footer{width:100%; height:207px; background-color: #FF9595;
+   text-align: center; color:#fff;}
+#footer ul {margin-left:166px; padding-top:40px; padding-bottom:30px;}
+#footer ul li{float:left;padding-right:15px; padding-left:15px;}
+#footer span{line-height:10px; margin-right:15px;}
+#footer span:nth-child(2), #footer span:nth-child(5){margin-right:none;}
+#footer .copy{font-weight:bold; margin-top:20px;}
+
+
+/*
+
+네비 부분 스크롤 했을 때 나타나고 사라지는 제이쿼리 넣기 예제4 네비게이션
+사이트맵(네비 눌렀을 때 나오는 거) 제이쿼리까지 넣기 스타피부과 html 가져오기
+언어선택
+메뉴부분 글자 앱솔루트로 넣어야함
+반응형 사이즈 설정하기
+더보기 부분 제이쿼리 예제1번 롤오버 참고해서 넣기
+
+*/

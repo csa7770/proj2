@@ -12,7 +12,9 @@
 /*********************section****************************/
 /*sec1*/
 #sec1{}
-#sec1 .main{position:absolute; top:0; left:0;}
+#sec1 .dougnut_img1{position:absolute; top:210px; left:20px;}
+#sec1 .dougnut_img2{position:absolute; top:430px; right:25px;}
+#sec1 .main{position:absolute; top:330px; left:460px;}
 
 
 /*sec2*/
@@ -23,38 +25,60 @@
             border:8px solid #FF9595; border-radius:50px;
             padding:17px 20px;
             margin-top:80px; margin-bottom:100px;
-            color:#783636;}
+            color:#783636;
+            transition:0.3s;}
 #sec2 .more img{margin-left:10px;}
 
-#sec2 .menu .menu_icon{position:absolute; top:1600px; left:300px;}
+#sec2 .menu .menu_icon{position:absolute; top:1600px; left:22%; z-index:99999;}
 #sec2 .menu .menu_icon li{float:left; margin-left:253px;}
 #sec2 .menu .menu_icon li:first-child{margin-left:0;}
-#sec2 .menu .menu_img{}
 #sec2 .menu .menu_img > li{float:left;
                       width:calc((100% - 120px) / 4);
-                      margin-right:40px;}
+                      margin-right:40px; position:relative;}
 #sec2 .menu .menu_img > li:last-child{margin-right:0px;}
+#sec2 .menu .menu_img .m_hover{position:absolute; top:0;
+                               opacity:0; transition:0.5s;}
+#sec2 .menu .menu_img .menu_txt{color:blue; font-size:1.312rem; text-align: center;}
+
+
+
+/*sec2 아이콘, 이미지 오버 했을 때 디자인*/
+
+#sec2 .menu_img .m_hover:hover{opacity:1;}
+
+
+
+
+
+
 
 /*sec3*/
 
 
 
 /*sec4*/
+#sec4 .inner{display: flex;}
+#sec4 .cont{width:776px; height:725px;
+            margin-top:150px;
+            border-right:1px solid #bbb;}
+#sec4 .cont h1{margin-bottom:20px;}
+#sec4 .cont .txt1{margin-bottom:80px;}
+#sec4 .cont .txt2{margin-bottom:20px; font-size:1.125rem;}
 #sec4 .cont .best >li{float:left;}
-#sec4 .cont .best >li > p{text-align: center;}
-
-
+#sec4 .cont .best >li > p{text-align: center; margin-top:23px;}
+#sec4 .cont h3{font-size:1.5rem; margin-top:90px; margin-bottom:30px;}
+#sec4 .icon{width:504px; height:630px; margin-top:243px; margin-left:25px;}
+#sec4 .icon img{display:inline;}
+#sec4 .icon .service_button{display:inline-block;
+              border:8px solid #FF9595; border-radius: 50px;
+              padding:17px 20px; color:#783636;
+              margin-top:80px; margin-left:106px;}
+#sec4 .icon .service_button img{margin-left:10px;}
 
 /*sec5*/
-#sec5 .sns_img > li{float:left;}
+#sec5 .sns > li{float:left;}
+#sec5 .sns .sns_tit{margin-left:150px; margin-top:50px;}
+#sec5 .sns_img{margin-top:70px; margin-left:110px;}
+#sec5 .sns_img a{margin-right:50px;}
 
-
-/*********************footer****************************/
-
-#footer{width:100%; height:207px; background-color: #FF9595;
-        text-align: center;}
-#footer ul {margin-left:166px; padding-top:40px; padding-bottom:30px;}
-#footer ul li{float:left;padding-right:15px; padding-left:15px;}
-#footer span{line-height:10px; margin-right:15px;}
-#footer span:nth-child(2), #footer span:nth-child(5){margin-right:none;}
-#footer .copy{font-weight:bold; margin-top:20px;}
+#sec5 .sns_img img:hover{transform: rotate(-20deg);}

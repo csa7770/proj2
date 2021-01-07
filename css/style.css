@@ -1,3 +1,15 @@
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(0deg);}
+ }
+
+ @keyframes rotate2{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(0deg);}
+ }
+
 .inner{width:1280px; min-width:1024px; margin:0 auto;}
 
 #wrap{}
@@ -6,14 +18,13 @@
 #footer{}
 
 /*********************header****************************/
-#header .logo{position:absolute; top:76px; left:861px;}
 
 
 /*********************section****************************/
 /*sec1*/
-#sec1{}
-#sec1 .dougnut_img1{position:absolute; top:210px; left:20px;}
-#sec1 .dougnut_img2{position:absolute; top:430px; right:25px;}
+#sec1 p{}
+#sec1 .dougnut_img1{position:absolute; top:210px; left:20px; animation:rotate 2s linear infinite;}
+#sec1 .dougnut_img2{position:absolute; top:430px; right:25px; animation:rotate2 2s linear infinite; animation-delay:0.5s}
 #sec1 .main{position:absolute; top:330px; left:460px;}
 
 
@@ -23,11 +34,11 @@
 #sec2 .s_tit{text-align: center;}
 #sec2 .more{display:inline-block; margin-left:532px;
             border:8px solid #FF9595; border-radius:50px;
-            padding:17px 20px;
+            padding:15px 20px;
             margin-top:80px; margin-bottom:100px;
             color:#783636;
             transition:0.3s;}
-#sec2 .more img{margin-left:10px;}
+#sec2 .more:hover{background-color: #FF9595; color:#fff;}
 
 #sec2 .menu .menu_icon{position:absolute; top:1600px; left:22%; z-index:99999;}
 #sec2 .menu .menu_icon li{float:left; margin-left:253px;}
@@ -45,8 +56,6 @@
 /*sec2 아이콘, 이미지 오버 했을 때 디자인*/
 
 #sec2 .menu_img .m_hover:hover{opacity:1;}
-
-
 
 
 
@@ -71,14 +80,8 @@
 #sec4 .icon img{display:inline;}
 #sec4 .icon .service_button{display:inline-block;
               border:8px solid #FF9595; border-radius: 50px;
-              padding:17px 20px; color:#783636;
-              margin-top:80px; margin-left:106px;}
-#sec4 .icon .service_button img{margin-left:10px;}
+              padding:15px 20px; color:#783636;
+              margin-top:80px; margin-left:106px;
+              transition:0.3s;}
 
-/*sec5*/
-#sec5 .sns > li{float:left;}
-#sec5 .sns .sns_tit{margin-left:150px; margin-top:50px;}
-#sec5 .sns_img{margin-top:70px; margin-left:110px;}
-#sec5 .sns_img a{margin-right:50px;}
-
-#sec5 .sns_img img:hover{transform: rotate(-20deg);}
+#sec4 .icon .service_button:hover{background-color: #FF9595; color:#fff;}

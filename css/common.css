@@ -27,6 +27,9 @@ button{outline:0; border:none;}
 
 
 /*공통영역*/
+
+#header .logo{position:absolute; top:76px; left:861px;}
+
 #wrap{width:100%;overflow:hidden;}
 .inner{width:1280px; margin:0 auto;}
 
@@ -37,11 +40,10 @@ button{outline:0; border:none;}
 .bg5{background:url(../images/back5.png) no-repeat center;height:305px; width:100%;}
 
 #popup{text-align:center;
-       background-color: #FF9595; width:500px;
-       position:absolute; top:300px; left:700px;
+   position:absolute; top:300px; left:700px;
        z-index:99999999;
       /*display:none;*/}
-#popup button{background: none; cursor: pointer; margin-left:440px; margin-top:20px;}
+#popup button{background: none; cursor: pointer; position: absolute; top:30px; right:40px;}
 #popup p{margin-bottom:50px; color:#333;}
 
 /****네비영역****/
@@ -56,10 +58,11 @@ button{outline:0; border:none;}
 #header .list .bar1{width:30px; height:2px; background-color: #222;}
 #header .list .bar2{width:20px; height:2px; background-color: #222;
                    margin-top:4px;}
-
-#header #nav .select{margin-top:10px; /*display:none;*/}
-#header #nav .select > li{float:none; font-size:0.875rem;
-                          text-align: center; line-height: 1.7rem;}
+#header #nav .list .language span{font-size:0.875rem; border:1px solid #bbb;
+                                  padding:3px 5px; border-left:none; transition:0.5s;
+                                 cursor: pointer;}
+#header #nav .list .language span:hover{background-color:#444; color:#fff;}
+#header #nav .list .language span:first-child{border-left:1px solid #bbb;}
 
 /*네비상태 on 일때 디자인*/
 #header .list .bar1 .on{transform:rotate(45deg); top:15px;}
@@ -88,6 +91,17 @@ button{outline:0; border:none;}
 #nav_pop .depth2 > li > a{}
 
 
+
+/*sec5*/
+#sec5 .sns > li{float:left;}
+#sec5 .sns .sns_tit{margin-left:150px; margin-top:50px;}
+#sec5 .sns_img{margin-top:70px; margin-left:110px;}
+#sec5 .sns_img a{margin-right:50px;}
+
+#sec5 .sns_img img{transition:0.5s;}
+#sec5 .sns_img img:hover{transform: rotate(-20deg);}
+
+
 /*********************footer****************************/
 
 #footer{width:100%; height:207px; background-color: #FF9595;
@@ -97,12 +111,3 @@ button{outline:0; border:none;}
 #footer span{line-height:10px; margin-right:15px;}
 #footer span:nth-child(2), #footer span:nth-child(5){margin-right:none;}
 #footer .copy{font-weight:bold; margin-top:20px;}
-
-
-/*
-공지팝업 수정
-네비 부분 스크롤했을때 배경 나오고 사라지는 거 제이쿼리 수정
-사이트맵(네비 눌렀을 때 나오는 거) 제이쿼리까지 넣기 스타피부과 html 가져오기
-애니메이션 키프레임 이용해서 메인화면에 도넛 살짝씩 움직이게 하기
-언어선택 부분 국민은행 시안처럼 하기
-*/

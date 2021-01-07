@@ -1,4 +1,4 @@
-.inner{width:1280px; margin:0 auto;}
+.inner{width:1280px; min-width:1024px; margin:0 auto;}
 
 #wrap{}
 #header{}
@@ -38,7 +38,7 @@
 #sec2 .menu .menu_img > li:last-child{margin-right:0px;}
 #sec2 .menu .menu_img .m_hover{position:absolute; top:0;
                                opacity:0; transition:0.5s;}
-#sec2 .menu .menu_img .menu_txt{color:blue; font-size:1.312rem; text-align: center;}
+#sec2 .menu .menu_img .menu_txt{color:#fff;}
 
 
 

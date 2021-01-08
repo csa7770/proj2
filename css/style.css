@@ -39,10 +39,6 @@
             color:#783636;
             transition:0.3s;}
 #sec2 .more:hover{background-color: #FF9595; color:#fff;}
-
-#sec2 .menu .menu_icon{position:absolute; top:1600px; left:22%; z-index:99999;}
-#sec2 .menu .menu_icon li{float:left; margin-left:253px;}
-#sec2 .menu .menu_icon li:first-child{margin-left:0;}
 #sec2 .menu .menu_img > li{float:left;
                       width:calc((100% - 120px) / 4);
                       margin-right:40px; position:relative;}

@@ -10,61 +10,74 @@
       <script src="js/html5.js"></script>
    <![endif]-->
 
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <link href="css/common.css" rel="stylesheet" type="text/css">
 <link href="css/sub_style.css" rel="stylesheet" type="text/css">
 
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 
 <script src="./js/navpop.js" type="text/javascript"></script>
 <script src="./js/nav.js" type="text/javascript"></script>
-<script src="./js/sub_menu.js" type="text/javascript"></script>
+<script src="./js/slide.js" type="text/javascript"></script>
 
 </head>
 
 <body>
-    <div id="wrap" class="bg">
-        <div id="nav_pop">
-            <div class="navpop_inner">
-              <ul class="depth1" >
-                <li class="nav_menu"><a href="#" class="check">MENU</a>
-                      <ul class="depth2">
-                       <li><a href="#">신메뉴</a></li>
-                       <li><a href="#">베스트 메뉴</a></li>
-                       <li><a href="#">도넛</a></li>
-                       <li><a href="#">커피 & 음료</a></li>
-                       <li><a href="#">아이스크림 & 프로즌</a></li>
-                       <li><a href="#">시즌한정 메뉴</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">STORE</a>
-                     <ul class="depth2">
-                      <li><a href="#">매장찾기</a></li>
-                      <li><a href="#">가맹문의</a></li>
-                   </ul>
-               </li>
-               <li><a href="#">HOME SERVICE</a>
-                     <ul class="depth2">
-                      <li><a href="#">홈서비스 이용하기</a></li>
-                   </ul>
-               </li>
-               <li><a href="#">EVENT</a>
-                     <ul class="depth2">
-                      <li><a href="#">이벤트 & 당첨자 발표</a></li>
-                      <li><a href="#">제휴 서비스</a></li>
-                   </ul>
-               </li>
-               <li><a href="#">BRAND</a>
-                     <ul class="depth2">
-                      <li><a href="#">브랜드 스토리</a></li>
-                      <li><a href="#">공지사항</a></li>
-                   </ul>
-               </li>
-          </ul>   
-          </div>
-          </div>
+    <div id="wrap">
+      <div id="nav_pop">
+        <div class="navpop_inner">
+          <ul class="depth1" >
+            <li class="nav_menu">
+              <h1><a href="sub.html" class="check"><img src="images/navpop_tit1.png" alt="메뉴">*</a></h1>
+                  <ul class="depth2">
+                   <li class="check2"><a href="sub.html">도넛</a></li>
+                   <li><a href="#">커피 & 음료</a></li>
+                   <li><a href="#">아이스크림 & 프로즌</a></li>
+                   <li><a href="#">시즌한정 메뉴</a></li>
+                </ul>
+            </li>
+    
+            <br>
+    
+            <li><h1><a href="#"><img src="images/navpop_tit2.png" alt="스토어"></a></h1>
+                 <ul class="depth2">
+                  <li><a href="#">매장찾기</a></li>
+                  <li><a href="#">가맹문의</a></li>
+               </ul>
+           </li>
+    
+           <br>
+    
+           <li><h1><a href="#"><img src="images/navpop_tit3.png" alt="홈서비스"></a></h1>
+                 <ul class="depth2">
+                  <li><a href="#">홈서비스 이용하기</a></li>
+               </ul>
+           </li>
+    
+           <br>
+    
+           <li><h1><a href="#"><img src="images/navpop_tit4.png" alt="이벤트"></a></h1>
+                 <ul class="depth2">
+                  <li><a href="#">이벤트 & 당첨자 발표</a></li>
+                  <li><a href="#">제휴 서비스</a></li>
+               </ul>
+           </li>
+    
+           <br>
+           
+           <li><h1><a href="#"><img src="images/navpop_tit5.png" alt="브랜드"></a></h1>
+                 <ul class="depth2">
+                  <li><a href="#">브랜드 스토리</a></li>
+                  <li><a href="#">공지사항</a></li>
+               </ul>
+           </li>
+      </ul>   
+      </div>
+      </div>
         
           <header id="header">
           
@@ -81,16 +94,97 @@
           </header>
     </div>
 
+    <p class="link inner">
+      <span><a href="index.html"><img src="images/homeicon.png" alt="홈버튼"></a></span>
+      <span> > </span>
+      <span><a href="sub.html">MENU</a></span>
+    </p>
+
 <section id="sub_sec1">
   <div class="content">
   <div class="inner">
     <div class="sub_menu">
-    <p></p>
     <h1><img src="images/menu_tit.png" alt="크리스피 크림 메뉴"></h1>
-    <ul>
-      <li>도넛</li> <li>커피&음료</li> <li>아이스크림&프로즌</li> <li>시즌한정 메뉴</li>
+    <p class="sub_s_tit">크리스피 크림 도넛의 다양한 메뉴를 소개합니다.</p>
+    <ul class="menu_select">
+      <li><a href="#">도넛</a></li>
+      <li><a href="#">커피&음료</a></li>
+      <li><a href="#">아이스크림& 프로즌</a></li>
+      <li><a href="#">시즌한정 메뉴</a></li>
     </ul>
-<hr>
+
+<section class="box1">
+  <div class="center slider">
+    <div><img src="images/doughnut1.png" alt="오리지널 글레이즈드">
+      <img src="images/doughnut1_hover.png" alt="오리지널 글레이즈드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut2.png" alt="미니 오리지널 글레이즈드">
+      <img src="images/doughnut2_hover.png" alt="미니 오리지널 글레이즈드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut3.png" alt="카라멜 아이스드">
+      <img src="images/doughnut3_hover.png" alt="카라멜 아이스드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut4.png" alt="초코홀릭">
+      <img src="images/doughnut4_hover.png" alt="초코홀릭" class="menu_hover"></div>
+
+    <div><img src="images/doughnut5.png" alt="글레이즈드 사워크림">
+      <img src="images/doughnut5_hover.png" alt="글레이즈드 사워크림" class="menu_hover"></div>
+
+    <div><img src="images/doughnut6.png" alt="글레이즈드 초코 케익">
+      <img src="images/doughnut6_hover.png" alt="글레이즈드 초코 케익" class="menu_hover"></div>
+
+    <div><img src="images/doughnut7.png" alt="슈거 코티드">
+      <img src="images/doughnut7_hover.png" alt="슈거 코티드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut8.png" alt="프리미엄 스트로베리 필드">
+      <img src="images/doughnut8_hover.png" alt="프리미엄 스트로베리 필드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut9.png" alt="카라멜 와플넛">
+      <img src="images/doughnut9_hover.png" alt="카라멜 와플넛" class="menu_hover"></div>
+
+    <div><img src="images/doughnut10.png" alt="딸기 와플넛">
+      <img src="images/doughnut10_hover.png" alt="딸기 와플넛" class="menu_hover"></div>
+
+    <div><img src="images/doughnut11.png" alt="초코 와플넛">
+      <img src="images/doughnut11_hover.png" alt="초코 와플넛" class="menu_hover"></div>
+
+    <div><img src="images/doughnut12.png" alt="초콜렛 아이스드 글레이즈드">
+      <img src="images/doughnut12_hover.png" alt="초콜렛 아이스드 글레이즈드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut13.png" alt="뉴욕 치즈케익">
+      <img src="images/doughnut13_hover.png" alt="뉴욕 치즈케익" class="menu_hover"></div>
+
+    <div><img src="images/doughnut14.png" alt="리고 피넛버터">
+      <img src="images/doughnut14_hover.png" alt="리고 피넛버터" class="menu_hover"></div>
+
+    <div><img src="images/doughnut15.png" alt="로투스 비스코프">
+      <img src="images/doughnut15_hover.png" alt="로투스 비스코프" class="menu_hover"></div>
+
+    <div><img src="images/doughnut16.png" alt="초콜릿 필드">
+      <img src="images/doughnut16_hover.png" alt="초콜릿 필드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut17.png" alt="스노우 크리스탈">
+      <img src="images/doughnut17_hover.png" alt="스노우 크리스탈" class="menu_hover"></div>
+
+    <div><img src="images/doughnut18.png" alt="밀카 스트로베리 필드">
+      <img src="images/doughnut18_hover.png" alt="밀카 스트로베리 필드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut19.png" alt="행복하소">
+      <img src="images/doughnut19_hover.png" alt="행복하소드" class="menu_hover"></div>
+
+    <div><img src="images/doughnut20.png" alt="푸른 초원 위 밀카무">
+      <img src="images/doughnut20_hover.png" alt="푸른 초원 위 밀카무" class="menu_hover"></div>
+
+    <div><img src="images/doughnut21.png" alt="오리지널 글레이즈드 더즌">
+      <img src="images/doughnut21_hover.png" alt="오리지널 글레이즈드 더즌" class="menu_hover"></div>
+
+    <div><img src="images/doughnut22.png" alt="어쏘티드 1더즌">
+      <img src="images/doughnut22_hover.png" alt="어쏘티드 1더즌" class="menu_hover"></div>
+
+    <div><img src="images/doughnut23.png" alt="더블 더즌 딜">
+      <img src="images/doughnut23_hover.png" alt="더블 더즌 딜" class="menu_hover"></div>
+  </div>
+  </section>
 
     </div><!--sub_menu-->
   </div><!--inner-->
@@ -103,9 +197,9 @@
             <ul class="sns">
               <li class="sns_tit"><img src="images/sns_tit.png" alt="크리스피 크림 도넛 SNS"></li>
               <li class="sns_img">
-               <a href="#"><img src="images/sns1.png" alt="트위터 바로가기"></a>
-               <a href="#"><img src="images/sns2.png" alt="인스타그램 바로가기"></a>
-               <a href="#"><img src="images/sns3.png" alt="페이스북 바로가기"></a></li>
+                <a href="https://twitter.com/krispykremekr "><img src="images/sns1.png" alt="트위터 바로가기"></a>
+                <a href="https://www.instagram.com/krispykremekr/"><img src="images/sns2.png" alt="인스타그램 바로가기"></a>
+                <a href="https://www.facebook.com/kkdkorea1937"><img src="images/sns3.png" alt="페이스북 바로가기"></a></li>
             </ul>
           </div>
         </div>

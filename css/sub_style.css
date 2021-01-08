@@ -1,17 +1,47 @@
-body{background-color: #FBFAF9;}
+body{background-color:#FBFAF9;}
 
 .inner{width:1280px; min-width:1024px; margin:0 auto;}
 #header{height:280px;}
 
 #sub_sec1{height:1080px;}
+#sub_sec1 .sub_menu h1{margin-left:89px; margin-top:100px;}
+#sub_sec1 .sub_menu .sub_s_tit{margin-left:441px; margin-bottom:90px;}
+#sub_sec1 .sub_menu > ul{margin-left:323px;}
 #sub_sec1 .sub_menu > ul > li{float:left; margin-right:30px;
                               border:1px solid #bbb; border-radius: 50px;
                               padding:7px 15px; cursor: pointer;
-                              transition:0.3s;}
-/*#sub_sec1 .sub_menu > ul > li:first-child{background-color: #FF9595; border:1px solid #FF9595;}*/
+                              transition:0.3s;
+                              margin-bottom:40px;}
+#sub_sec1 .sub_menu > ul > li:first-child{background-color: #FF9595; border:1px solid #FF9595;}
 #sub_sec1 .sub_menu > ul > li:last-child{margin-right:0;}
 #sub_sec1 .sub_menu > ul > li:hover{background-color: #FF9595; border:1px solid #FF9595;}
 
+.link{border-bottom:1px solid #bbb; padding-bottom:10px;}
+.link span{margin-right:5px;}
+.link span:last-child{margin-right:0; font-weight: bold;}
+
+.box1 .center .menu_hover{}
+.box1 .center .menu_hover:hover{}
+
+.slick-prev, .slick-next {z-index:9999}
+  .slick-prev:before,
+  .slick-next:before {
+      color: black;
+    }
+  .slick-slide img {
+      width: 100%;
+    }
+  .slick-list {padding:0 !important}
+
+.slick-arrow{position:absolute; top:35%; text-indent: -9999px; cursor: pointer;}
+.slick-prev{width:30px; height:60px; background: url(../images/sub_left_arrow.png) no-repeat; left:50px;}
+.slick-next{width:30px; height:60px; background: url(../images/sub_right_arrow.png) no-repeat; right:50px;}
+
+.box1{width:1280px; margin:100px auto;overflow:hidden; margin-bottom:0;}
+.center  {margin:20px}
+.center  .slick-slide {margin:0 10px;padding:10px;height:auto;}
+.center .slick-slide img {transition:.3s;}
+.center .slick-slide.slick-active.slick-current img {opacity: 1;transform: scale(1.3);}
 
 
 

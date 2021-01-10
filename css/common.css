@@ -64,9 +64,7 @@ button{outline:0; border:none;}
 #header #nav .list .language span:hover{background-color:#444; color:#fff;}
 #header #nav .list .language span:first-child{border-left:1px solid #bbb;}
 
-/*네비상태 on 일때 디자인*/
-#header .list .bar1 .on{transform:rotate(45deg); top:15px;}
-#header .list .bar2 .on{width:30px; transform:rotate(-45deg);}
+
 
 
 #nav_pop{position:fixed;
@@ -75,13 +73,15 @@ button{outline:0; border:none;}
         background: url(../images/navpop_back.png) no-repeat center;
         z-index:999999999;
         display:none;}
+#nav_pop .nav_pop_close{display: inline-block; padding-left:35px; padding-top:35px;
+                        cursor: pointer;}
 #nav_pop .navpop_inner{width:1280px; min-width:1024px; margin:0 auto;}
 #nav_pop h1{font-size:5.7rem; display:block;
             border-bottom:1px solid #aaa;
             padding-bottom:10px;}
 #nav_pop .depth1 > li{margin-bottom:20px;
                       height:calc((100% - 80px) / 5);}
-#nav_pop .depth1 > li:first-child{padding-top:70px;}
+#nav_pop .depth1 > li:first-child{padding-top:20px;}
 #nav_pop .depth2 >li{float:left; font-size:1.25rem;
                      margin-right:100px; margin-top:5px;
                      transition:0.5s;}

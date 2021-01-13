@@ -30,7 +30,7 @@ button{outline:0; border:none;}
 
 #header .logo{position:absolute; top:76px; left:861px;}
 
-#wrap{width:100%;overflow:hidden;}
+#wrap{width:100%;overflow:hidden; min-width:1024px;}
 .inner{width:1280px; margin:0 auto;}
 
 .bg1{background:url(../images/back01.png) no-repeat center;height:1080px; width:100%;}

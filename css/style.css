@@ -24,8 +24,13 @@
 /*sec1*/
 #sec1 p{}
 #sec1 .dougnut_img1{position:absolute; top:210px; left:20px; animation:rotate 2s linear infinite;}
+#sec1 .dougnut_img1 img{width:100%;}
 #sec1 .dougnut_img2{position:absolute; top:430px; right:25px; animation:rotate2 2s linear infinite; animation-delay:0.5s}
+#sec1 .dougnut_img2 img{width:100%;}
 #sec1 .main{position:absolute; top:330px; left:460px;}
+#sec1 .main img{width:100%;}
+
+.logo img {width:100%;}
 
 
 /*sec2*/

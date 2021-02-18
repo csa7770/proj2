@@ -30,7 +30,6 @@ button{outline:0; border:none;}
 
 
 #header .logo{position:absolute; top:76px; left:861px;}
-#header .logo img{width:100%;}
 
 #wrap{width:100%;overflow:hidden; min-width:1024px;}
 .inner{width:1280px; margin:0 auto;}
@@ -70,7 +69,7 @@ button{outline:0; border:none;}
 
 
 #nav_pop{position:fixed;
-        width:100%; min-width:1024px; height:1080px;
+        width:100%; min-width:1024px; height:100%;
         overflow:auto;
         background: url(../images/navpop_back.png) no-repeat center;
         z-index:999999999;
